@@ -9,7 +9,7 @@ import com.example.myapplication.models.OrderStatu
 import com.example.myapplication.models.RespModel
 
 
-class dataadapter(private val context: Context, private var datalist: List<OrderStatu>): RecyclerView.Adapter<dataviewholder>() {
+class dataadapter(private val context: Context, private var datalist: ArrayList<OrderStatu>): RecyclerView.Adapter<dataviewholder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): dataviewholder {

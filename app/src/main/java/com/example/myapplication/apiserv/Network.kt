@@ -20,4 +20,5 @@ object Network {
 
 
     fun getapiservice() = getretrofit().create(apiService::class.java)
+
 }

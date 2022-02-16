@@ -3,12 +3,11 @@ package com.example.myapplication.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.R
-import com.example.myapplication.apiserv.apiService
 import com.example.myapplication.models.OrderStatu
+import com.example.myapplication.models.RespModel
 import com.example.myapplication.repo.mainrepo
 import com.example.myapplication.viewmdl.mainvm
 import com.example.myapplication.viewmdl.vmfactory
@@ -31,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         viewmode.gettdataa()
         viewmode.livedata.observe(this, Observer {
             itemlist= it as ArrayList<OrderStatu>
+
             setadapter()
         })
 
